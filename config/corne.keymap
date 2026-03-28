@@ -37,30 +37,30 @@
         base_layer {
 // ╭──────┬──────┬──────┬──────┬──────┬──────╮   ╭──────┬──────┬──────┬──────┬──────┬──────╮
 // │      │  Q   │  W   │  E   │  R   │  T   │   │  Y   │  U   │  I   │  O   │  P   │      │
-// │      │GUI/A │ALT/S │CTL/D │SHT/F │  G   │   │  H   │SHT/J │CTL/K │ALT/L │GUI/' │      │
+// │      │GUI/A │ALT/S │CTL/D │SHT/F │  G   │   │  H   │SHT/J │CTL/K │ALT/L │GUI/; │      │
 // │      │  Z   │  X   │  C   │  V   │  B   │   │  N   │  M   │  ,   │  .   │  /   │      │
 // ╰──────┴──────┴──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┴──────┴──────╯
-//                      │Med/⎋ │Nav/␣ │Mou/⇥ │   │Sym/↵ │Num/⌫ │Fun/⌦ │
+//                      │Med/⎋ │Nav/⌫ │Mou/⇥ │   │Sym/↵ │Num/␣ │Fun/⌦ │
 //                      ╰──────┴──────┴──────╯   ╰──────┴──────┴──────╯
             bindings = <
-   &none  &kp Q       &kp W       &kp E        &kp R        &kp T          &kp Y        &kp U        &kp I        &kp O       &kp P        &none
-   &none  &hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G          &kp H        &hm RSHFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SQT &none
-   &none  &kp Z       &kp X       &kp C        &kp V        &kp B          &kp N        &kp M        &kp COMMA    &kp DOT     &kp FSLH     &none
-                                  &lt MEDIA ESC &lt NAV SPC  &lt MOUSE TAB  &lt SYM RET  &lt NUM BSPC &lt FUN DEL
+   &none  &kp Q       &kp W       &kp E        &kp R        &kp T          &kp Y        &kp U        &kp I        &kp O       &kp P         &none
+   &none  &hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G          &kp H        &hm RSHFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMI &none
+   &none  &kp Z       &kp X       &kp C        &kp V        &kp B          &kp N        &kp M        &kp COMMA    &kp DOT     &kp FSLH      &none
+                                  &lt MEDIA ESC &lt NAV BSPC  &lt MOUSE TAB  &lt SYM RET  &lt NUM SPC &lt FUN DEL
             >;
         };
 
         nav_layer {
 // ╭──────┬──────┬──────┬──────┬──────┬──────╮   ╭──────┬──────┬──────┬──────┬──────┬──────╮
-// │      │ Redo │Paste │ Copy │ Cut  │ Undo │   │ PgUp │ Home │  ↑   │ End  │ PgDn │      │
-// │      │ GUI  │ ALT  │ CTL  │ SHT  │      │   │      │  ←   │  ↓   │  →   │      │      │
+// │      │ Redo │Paste │ Copy │ Cut  │ Undo │   │ PgUp │ Home │ End  │ PgDn │      │      │
+// │      │ GUI  │ ALT  │ CTL  │ SHT  │      │   │  ←   │   ↓  │  ↑   │  →   │      │      │
 // │      │      │      │      │      │      │   │      │ Undo │ Cut  │ Copy │Paste │      │
 // ╰──────┴──────┴──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┴──────┴──────╯
 //                      │  ⎋   │(held)│  ⇥   │   │  ↵   │  ⌫   │  ⌦   │
 //                      ╰──────┴──────┴──────╯   ╰──────┴──────┴──────╯
             bindings = <
-   &none  &kp LG(LS(Z)) &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)    &kp PG_UP  &kp HOME   &kp UP     &kp END    &kp PG_DN  &none
-   &none  &kp LGUI      &kp LALT   &kp LCTRL  &kp LSHFT  &trans       &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans     &none
+   &none  &kp LG(LS(Z)) &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)    &kp PG_UP  &kp HOME   &kp END    &kp PG_DN  &none      &none
+   &none  &kp LGUI      &kp LALT   &kp LCTRL  &kp LSHFT  &trans       &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans     &none
    &none  &trans        &trans     &trans     &trans     &trans       &trans     &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &none
                                    &kp ESC    &trans     &kp TAB      &kp RET    &kp BSPC   &kp DEL
             >;
@@ -100,16 +100,16 @@
 
         num_layer {
 // ╭──────┬──────┬──────┬──────┬──────┬──────╮   ╭──────┬──────┬──────┬──────┬──────┬──────╮
-// │      │  [   │  7   │  8   │  9   │  ]   │   │      │      │      │      │      │      │
+// │      │  [   │  1   │  2   │  3   │  ]   │   │      │      │      │      │      │      │
 // │      │  ;   │  4   │  5   │  6   │  =   │   │      │ SHT  │ CTL  │ ALT  │ GUI  │      │
-// │      │  `   │  1   │  2   │  3   │  \   │   │      │      │      │      │      │      │
+// │      │  `   │  7   │  8   │  9   │  \   │   │      │      │      │      │      │      │
 // ╰──────┴──────┴──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┴──────┴──────╯
 //                      │  .   │  0   │  -   │   │  ↵   │(held)│  ⌦   │
 //                      ╰──────┴──────┴──────╯   ╰──────┴──────┴──────╯
             bindings = <
-   &none  &kp LBKT   &kp N7  &kp N8  &kp N9  &kp RBKT     &none    &none      &none      &none     &none     &none
-   &none  &kp SEMI   &kp N4  &kp N5  &kp N6  &kp EQUAL    &none    &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &none
-   &none  &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp BSLH     &none    &none      &none      &none     &none     &none
+   &none  &kp LBKT   &kp N1  &kp N2  &kp N3  &kp RBKT     &none    &none      &none      &none     &none     &none
+   &none  &kp SQT    &kp N4  &kp N5  &kp N6  &kp EQUAL    &none    &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &none
+   &none  &kp GRAVE  &kp N7  &kp N8  &kp N9  &kp BSLH     &none    &none      &none      &none     &none     &none
                              &kp DOT &kp N0  &kp MINUS    &kp RET  &trans     &kp DEL
             >;
         };
@@ -117,14 +117,14 @@
         sym_layer {
 // ╭──────┬──────┬──────┬──────┬──────┬──────╮   ╭──────┬──────┬──────┬──────┬──────┬──────╮
 // │      │  {   │  &   │  *   │  (   │  }   │   │      │      │      │      │      │      │
-// │      │  :   │  $   │  %   │  ^   │  +   │   │      │ SHT  │ CTL  │ ALT  │ GUI  │      │
+// │      │  '   │  $   │  %   │  ^   │  +   │   │      │ SHT  │ CTL  │ ALT  │ GUI  │      │
 // │      │  ~   │  !   │  @   │  #   │  |   │   │      │      │      │      │      │      │
 // ╰──────┴──────┴──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┴──────┴──────╯
 //                      │  (   │  )   │  _   │   │(held)│  ⌫   │  ⌦   │
 //                      ╰──────┴──────┴──────╯   ╰──────┴──────┴──────╯
             bindings = <
    &none  &kp LBRC   &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC    &none    &none      &none      &none     &none     &none
-   &none  &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS    &none    &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &none
+   &none  &kp SQT    &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS    &none    &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &none
    &none  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE    &none    &none      &none      &none     &none     &none
                                &kp LPAR   &kp RPAR   &kp UNDER   &trans   &kp BSPC   &kp DEL
             >;
