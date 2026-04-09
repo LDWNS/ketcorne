@@ -101,7 +101,7 @@
         num_layer {
 // ╭──────┬──────┬──────┬──────┬──────┬──────╮   ╭──────┬──────┬──────┬──────┬──────┬──────╮
 // │      │  [   │  1   │  2   │  3   │  ]   │   │      │      │      │      │      │      │
-// │      │  ;   │  4   │  5   │  6   │  =   │   │      │ CTL  │ GUI  │ ALT  │ SHT  │      │
+// │      │  '   │  4   │  5   │  6   │  =   │   │      │ CTL  │ GUI  │ ALT  │ SHT  │      │
 // │      │  `   │  7   │  8   │  9   │  \   │   │      │      │      │      │      │      │
 // ╰──────┴──────┴──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┴──────┴──────╯
 //                      │  .   │  0   │  -   │   │  ↵   │(held)│  ⌦   │
@@ -117,14 +117,14 @@
         sym_layer {
 // ╭──────┬──────┬──────┬──────┬──────┬──────╮   ╭──────┬──────┬──────┬──────┬──────┬──────╮
 // │      │  {   │  &   │  *   │  (   │  }   │   │      │      │      │      │      │      │
-// │      │  '   │  $   │  %   │  ^   │  +   │   │      │ SHT  │ CTL  │ ALT  │ GUI  │      │
+// │      │  "   │  $   │  %   │  ^   │  +   │   │      │ SHT  │ CTL  │ ALT  │ GUI  │      │
 // │      │  ~   │  !   │  @   │  #   │  |   │   │      │      │      │      │      │      │
 // ╰──────┴──────┴──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┴──────┴──────╯
 //                      │  (   │  )   │  _   │   │(held)│  ⌫   │  ⌦   │
 //                      ╰──────┴──────┴──────╯   ╰──────┴──────┴──────╯
             bindings = <
    &none  &kp LBRC   &kp EXCL  &kp AT     &kp HASH   &kp RBRC    &none    &none      &none      &none     &none     &none
-   &none  &kp SQT    &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS    &none    &kp RCTRL  &kp RGUI   &kp RALT  &kp RSHFT &none
+   &none  &kp DQT    &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS    &none    &kp RCTRL  &kp RGUI   &kp RALT  &kp RSHFT &none
    &none  &kp TILDE  &kp AMPS  &kp ASTRK  &kp LPAR   &kp PIPE    &none    &none      &none      &none     &none     &none
                                &kp LPAR   &kp RPAR   &kp UNDER   &trans   &kp BSPC   &kp DEL
             >;
